@@ -1,3 +1,25 @@
+justlog is a simple package to write to command prompt and file. You can change the log file if you want.
+
+This is my code example for printing
+
+```python
+import justlog as jl
+from justlog import printl
+
+xs = 'I love Python! Python is the best programming computer'
+dict__ = {}
+i = 0
+for x in xs:
+	dict__[x] = i
+	i += 1
+
+printl('Hai')
+printl(str(('this is the dict', dict__)))
+```
+
+And the result would be like
+
+```console
 [I] 18-26-05 10:04:38 -- Hai
 [I] 18-26-05 10:04:38 -- {' ': 45,
                           '!': 13,
@@ -21,3 +43,6 @@
                           'u': 50,
                           'v': 4,
                           'y': 16}
+```
+
+Feel free to use!
